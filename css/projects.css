@@ -1,7 +1,7 @@
 #projects .container {
     display: flex;
     width: 100vw;
-    max-width: 640px;
+    max-width: var(--width);
     align-items: center;
     justify-content: center;
 }
