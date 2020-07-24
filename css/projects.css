@@ -1,0 +1,41 @@
+#projects .container {
+    display: flex;
+    width: 100vw;
+    max-width: 640px;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .carousel {
+    display: flex;
+    overflow-x: scroll;
+    border: 0.5em solid black;
+}
+
+#projects .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    min-height: 16em;
+    min-width: 24em;
+    padding: 1em;
+}
+
+#projects .language {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#projects .links {
+    margin-top: auto;
+}
+
+#projects .link {
+    display: block;
+    color: black;
+}
+
+#projects .link.dead {
+    color: gray;
+    text-decoration: line-through;
+}
