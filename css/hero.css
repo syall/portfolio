@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-#hero .food, #hero .name {
+#hero .no-break, #hero .name {
     white-space: nowrap;
 }
 

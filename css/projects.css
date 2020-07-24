@@ -39,3 +39,11 @@
     color: gray;
     text-decoration: line-through;
 }
+
+#projects .blog {
+    margin-top: 1em;
+}
+
+#projects .blog .link {
+    display: inline;
+}
