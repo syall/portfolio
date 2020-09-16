@@ -1,3 +1,7 @@
+#projects .github {
+    text-decoration: underline;
+}
+
 #projects .container {
     display: flex;
     width: 100vw;
