@@ -34,9 +34,9 @@ As a side note, GitHub pages does not allow sites with a GitHub personal access 
 
 In [`carousel.js`](js/carousel.js), the pinned repositories from the GitHub GraphQL API are formatted into HTML cards and appended to a scrollable container.
 
-In [`index.html`](index.html), there is already a container in the Projects section that is empty. The left and right beauty arrows and the carousel are appended dynamically via DOM manipulation. Each card is a div with a name h2, language p, description p, and links div to GitHub and hosted sites if available. The classes are attached during creation, but all of the CSS styles are predefined in [`projects.css`](css/projects.css).
+In [`index.html`](index.html), there is already a container in the Projects section that is empty. The top and bottom beauty arrows and the carousel are appended dynamically via DOM manipulation. Each card is a div with a name h2, language p, description p, and links div to GitHub and hosted sites if available. The classes are attached during creation, but all of the CSS styles are predefined in [`projects.css`](css/projects.css).
 
-The carousel is just a container that is scrollable by `overflow-x: scroll`. I love scrollable containers as the containers can scale to contain any amount of items, are easy to implement, and are extremely well supported. Out of all the dynamic features of browsers, scrolling usually never fails and is definitely more reliable than JavaScript event listeners.
+The carousel is just a container that is scrollable by `overflow-y: scroll`. I love scrollable containers as the containers can scale to contain any amount of items, are easy to implement, and are extremely well supported. Out of all the dynamic features of browsers, scrolling usually never fails and is definitely more reliable than JavaScript event listeners.
 
 ## Images
 

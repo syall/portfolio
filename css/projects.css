@@ -2,17 +2,14 @@
     text-decoration: underline;
 }
 
-#projects .container {
-    display: flex;
-    width: 100vw;
-    max-width: var(--width);
-    align-items: center;
-    justify-content: center;
+#projects .container p, .arrows {
+    width: fit-content;
+    margin: auto;
 }
 
 #projects .carousel {
-    display: flex;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    max-height: calc(var(--width) / 2);
     border: 0.5em solid black;
 }
 
@@ -21,7 +18,7 @@
     flex-direction: column;
     border: 1px solid black;
     min-height: 16em;
-    min-width: 24em;
+    max-width: calc(var(--width));
     padding: 1em;
 }
 

@@ -1,5 +1,5 @@
 const container = document.querySelector('#projects .container');
-const errorMessage = 'Could not load Projects. Try Refreshing...';
+const errorMessage = '<p>Could not load Projects. Try Refreshing...</p>';
 
 (async function () { attachRepos(await fetchPinnedRepos()); })();
 
@@ -65,12 +65,12 @@ async function fetchPinnedRepos() {
 function attachRepos(repos) {
     container.innerHTML = '';
     const carousel = createCarousel();
-    container.appendChild(createArrow(`«<br>«<br>«<br>«`));
+    container.appendChild(createArrow(`▲ ▲ ▲ ▲ ▲ ▲`));
     container.appendChild(carousel);
     for (const repo of repos) {
         carousel.appendChild(createCard(repo));
     }
-    container.appendChild(createArrow(`»<br>»<br>»<br>»`));
+    container.appendChild(createArrow(`▼ ▼ ▼ ▼ ▼ ▼`));
 
     function createCarousel() {
         const div = document.createElement('div');
