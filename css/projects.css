@@ -2,7 +2,9 @@
     text-decoration: underline;
 }
 
-#projects .container p, .arrows {
+#projects
+.container .status,
+.arrows {
     width: fit-content;
     margin: auto;
 }
@@ -14,10 +16,7 @@
 }
 
 #projects .card {
-    display: flex;
-    flex-direction: column;
     border: 1px solid black;
-    min-height: 16em;
     max-width: calc(var(--width));
     padding: 1em;
 }
@@ -27,8 +26,8 @@
     margin-bottom: 0.5em;
 }
 
-#projects .links {
-    margin-top: auto;
+#projects .description {
+    margin-bottom: 1em;
 }
 
 #projects .link {

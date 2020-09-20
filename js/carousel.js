@@ -1,5 +1,5 @@
 const container = document.querySelector('#projects .container');
-const errorMessage = '<p>Could not load Projects. Try Refreshing...</p>';
+const errorMessage = '<p class="status">Could not load Projects. Try Refreshing...</p>';
 
 (async function () { attachRepos(await fetchPinnedRepos()); })();
 
