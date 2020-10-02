@@ -20,9 +20,15 @@ body {
     justify-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     display: inline;
     padding: 1em;
+    margin: 0;
     max-width: var(--width);
 }
 
