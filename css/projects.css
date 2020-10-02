@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+#projects .container {
+    margin: 1em;
+}
+
 #projects .carousel {
     overflow-y: scroll;
     max-height: calc(var(--width) / 2);
