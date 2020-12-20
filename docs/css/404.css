@@ -1,0 +1,85 @@
+/* Global */
+
+:root {
+    --primary-color: black;
+    --primary-text-color: white;
+    --secondary-color: gold;
+    --default-font: 'Monaco', monospace;
+    --normal-font-size: 1.2em;
+    --larger-font-size: 2em;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--default-font);
+    color: var(--primary-text-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    font-size: var(--larger-font-size);
+}
+
+p,
+a {
+    font-size: var(--normal-font-size);
+}
+
+/* Header */
+
+nav {
+    padding: 0.5em;
+}
+
+.home {
+    display: block;
+    height: 2em;
+    width: 2em;
+}
+
+/* Section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1em;
+}
+
+.redirect {
+    margin-top: 1em;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 1em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Global */
+
+    :root {
+        --normal-font-size: 1em;
+        --larger-font-size: 1.2em;
+    }
+
+    .home {
+        margin: auto;
+    }
+
+}
