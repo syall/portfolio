@@ -9,7 +9,7 @@
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Authorization': `bearer ${decrypt('779714f4e58d2d750662gg3f90e5f0b09f666452')}`
+                'Authorization': `token ${decrypt('g=h=p=_=3=K=S=q=A=G=L=W=B=v=7=d=Q=Y=2=P=S=X=3=q=w=i=t=l=e=2=j=D=W=A=3=W=3=K=g=8')}`
             },
             body: JSON.stringify({
                 query: `{
@@ -73,12 +73,7 @@
     }
 
     function decrypt(encrypted) {
-        const split = encrypted.split('');
-        const decryptedCharCodes = split.map(c => c.match(/[a-z]/)
-            ? c.charCodeAt(0) - 1
-            : c.charCodeAt(0));
-        const decrypted = String.fromCharCode(...decryptedCharCodes);
-        return decrypted;
+        return encrypted.split('=').join('');
     }
 
 })();
